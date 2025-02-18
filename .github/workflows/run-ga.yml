@@ -10,12 +10,8 @@ jobs:
     steps:
       - name: Checkout del código
         uses: actions/checkout@v4
-      - name: Instalar dependencias
-        run: npm install
-      - name: Compilar el código
-        run: npm run build
 
       - name: Ejecutar la Action
-        uses: ./
+        uses: gumonet/github-action-hello-world@v0.0.1
         with:
           name: 'Desarrollador'
