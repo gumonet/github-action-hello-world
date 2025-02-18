@@ -1,0 +1,14 @@
+name: 'Hello World Action'
+description: 'Una acción simple que imprime un mensaje de entrada'
+author: 'TuNombre'
+inputs:
+  name:
+    description: 'Nombre del usuario'
+    required: true
+    default: 'Mundo'
+outputs:
+  message:
+    description: 'Mensaje de salida'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

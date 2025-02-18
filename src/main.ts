@@ -1,1 +1,3 @@
-console.log('Hello World!');
+import { runAction } from './action';
+
+runAction();
